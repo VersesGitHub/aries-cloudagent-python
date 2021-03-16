@@ -3,6 +3,7 @@ FROM bcgovimages/von-image:py36-1.15-1
 ENV ENABLE_PTVSD 0
 
 ADD requirements*.txt ./
+ADD verses_config.yaml ./
 
 RUN pip3 install --no-cache-dir -r requirements.txt -r requirements.dev.txt
 

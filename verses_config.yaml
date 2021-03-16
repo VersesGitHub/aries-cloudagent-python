@@ -1,0 +1,19 @@
+seed: Verses00000000000000000000000000
+wallet-type: indy
+wallet-storage-type: postgres_storage
+wallet-storage-config: '{"url":"172.17.0.1:5432","wallet_scheme":"DatabasePerWallet"}'
+wallet-storage-creds: '{"account":"postgres","password":"mysecretpassword","admin_account":"postgres","admin_password":"mysecretpassword"}'
+wallet-name: verses_wallet
+wallet-key: abcd1234
+genesis-url: http://dev.greenlight.bcovrin.vonx.io/genesis
+inbound-transport:
+  - [http, 0.0.0.0, 8020]
+outbound-transport: http
+admin: [0.0.0.0, 8021]
+endpoint: http://172.17.0.1:8020
+admin-insecure-mode: true
+label: VersesBaseAgent
+public-invites: true
+multitenant: true
+multitenant-admin: true
+jwt-secret: phRx8TMTzGcdUF83E4r5htFaKNWABPp5E7YJyFKX
