@@ -20,7 +20,7 @@ ACA-Py supports deployments in scaled environments such as in Kubernetes environ
 
 All of the necessary parameters are stored in a YAML found in the Docker folder. To create and run the agent in a Docker container, ```cd``` into the root folder and run:
 ```
-./scripts/run_docker start
+PORTS="8020:8020 8021:8021" ./scripts/run_docker start --arg-file ./verses_config.yaml
 ```
 
 If everything has worked you will receive a startup message in the terminal that looks like:
