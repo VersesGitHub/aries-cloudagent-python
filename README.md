@@ -18,7 +18,7 @@ ACA-Py supports deployments in scaled environments such as in Kubernetes environ
 
 ## Setup
 
-All of the necessary parameters are stored in a YAML found in the Docker folder. To create and run the agent in a Docker container, ```cd``` into the root folder and run:
+All of the necessary parameters are stored in a YAML. To create and run the agent in a Docker container, ```cd``` into the root folder and run:
 ```
 PORTS="8020:8020 8021:8021" ./scripts/run_docker start --arg-file ./verses_config.yaml
 ```
